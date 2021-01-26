@@ -1,0 +1,44 @@
+/*サイト全体*/
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  padding: 10px;
+}
+
+/*問題文*/
+#js-question{
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #c1c0b9;
+}
+
+/*選択肢(レイアウト→選択肢の親要素)*/
+#js-items{
+  display: flex;                 /*Flexboxを使用(親)宣言*/
+  justify-content: space-around; /*両端含めて等間隔に配置*/
+  flex-wrap: wrap;               /*折り返し→上から下へ*/
+  align-items: center;           /*アイテム→上下中央揃え*/
+}
+
+
+/*選択肢Btn*/
+#js-btn-1, #js-btn-2, #js-btn-3, #js-btn-4{
+  padding: 20px;
+  border: none;
+  box-shadow: 10px 10px 30px #eee;
+  border-radius: 10px;
+}
+
+
+/*[最初に戻る]Btn*/
+.url-index{
+  text-align: right;
+  padding: 20px;
+}
+a{
+  outline: none;
+  text-decoration: none;
+}
